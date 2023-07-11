@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="50dp"
+    android:backgroundTint="@color/md_green_100">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/messagelist_LAY_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/messagelist_IMG_encodedimg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/messagelist_IMG_checkmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_checkmark"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/messagelist_IMG_greencheckmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                app:srcCompat="@drawable/ic_checkmarkgreen"
+                android:visibility="invisible"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</androidx.cardview.widget.CardView>
